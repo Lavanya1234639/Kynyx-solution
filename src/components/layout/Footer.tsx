@@ -72,7 +72,7 @@ export default function Footer() {
               />
             </a>
 
-            <p className="mb-4 max-w-xs text-xs leading-relaxed text-slate-400">
+            <p className="mb-4 max-w-xs text-sm font-medium leading-relaxed text-slate-300">
               Premium technology consulting firm. We build the digital products
               that define the next decade of business.
             </p>
@@ -85,9 +85,9 @@ export default function Footer() {
               ].map(({ icon: Icon, text }) => (
                 <div
                   key={text}
-                  className="flex items-center gap-2 text-xs text-slate-400 hover:text-slate-300"
+                  className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white"
                 >
-                  <Icon size={12} className="flex-shrink-0 text-blue-400" />
+                  <Icon size={14} className="flex-shrink-0 text-blue-400" />
                   {text}
                 </div>
               ))}
@@ -105,7 +105,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
-                  className="flex h-7 w-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-slate-400 hover:border-blue-500/30 hover:bg-blue-500/10 hover:text-white"
+                  className="flex h-7 w-7 items-center justify-center rounded-md border border-white/10 bg-white/5 text-slate-300 hover:border-blue-500/30 hover:bg-blue-500/10 hover:text-white"
                 >
                   <Icon size={12} />
                 </motion.a>
@@ -115,7 +115,7 @@ export default function Footer() {
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-white">
+              <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-white">
                 {category}
               </h4>
               <ul className="space-y-2">
@@ -123,7 +123,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-xs text-slate-400 transition-colors hover:text-white"
+                      className="text-sm font-medium text-slate-300 transition-colors hover:text-white"
                     >
                       {link.label}
                     </a>
@@ -134,7 +134,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-3 pt-6 text-[11px] text-slate-500 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-3 pt-6 text-xs font-medium text-slate-400 sm:flex-row">
           <p>© {new Date().getFullYear()} Kynyx Solution. All rights reserved.</p>
           <div className="flex items-center gap-1">
             <span>Crafted with</span>
