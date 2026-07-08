@@ -7,6 +7,8 @@ import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-
 import { Menu, X, ArrowRight, Zap } from "lucide-react";
 import { navLinks, siteConfig } from "@/data";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+
 
 
 export default function Navbar() {
@@ -101,6 +103,7 @@ export default function Navbar() {
                   Start a Project
                   <ArrowRight size={14} />
                 </Link>
+                <ThemeToggle />
               </motion.div>
             </div>
 
