@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, Zap } from "lucide-react";
 import { navLinks, siteConfig } from "@/data";
 import Image from "next/image";
+
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
