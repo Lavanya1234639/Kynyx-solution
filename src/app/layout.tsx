@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/animations/SmoothScrollProvider";
+
 import {Inter} from "next/font/google";
 
 const inter= Inter({subsets:["latin"],variable: "--font-inter"})
